@@ -1,0 +1,30 @@
+#titleHeader {
+    background-color: #34DBB3;
+    text-align: center;
+    color: #1400FF;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.imgFit {
+    object-fit: cover;
+}
+
+#heroImg {
+    background-image: url(../Images/Blue\ cloudy\ sky.jpg);
+    object-fit: contain;
+    height: 400px;
+    background-repeat: no-repeat;
+}
+
+.txtCenter {
+    text-align: Center;
+}
+
+.PaddingT {
+    padding-top: 1%;
+}
+
+.saveBtn {
+    margin-top: 1%;
+}
