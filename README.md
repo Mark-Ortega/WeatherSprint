@@ -8,6 +8,6 @@ Day Two: Spent most of my morning doing so last minute studying for evaluations,
 
 Day Three: Did not make as much progress as i would've liked, i messed with the css and html because i forgot to do my api key, i succesfully got it and started trying to fetch data but was confused, doesn't help that im working from home either. I will continue working on this and doing some research/watching lms videos to try to see what im doing wrong as i have been since after lunch(when my api key was valid). kinda sucks that i waited this long but i practically wasted yesterday. Hopefully i can fetch these api's by tonight so i can start working on search bar and the time API tomorrow. As for css and html i kinda fixed some erros in my prototype and made it closer to the figma. Im currently in the process of fixing sizes and centering a button. I've also been working/testing different scrollable lists for my favorite list. Almost done with that. I also need to make the "Save to favorites" button functional.
 
-Day Four:
+Day Four: I definitely got stuck on trying to display my data and now have to play a major catchup game. Im struggling with actually displaying it and have tried multiple methods but i guess thats what ill be working on most of tonight. I still need to get the search bar working which should be pretty simple, and 5 day forecast but i might start that tonight and try to finish by tomorrow, really the main part im struggling with is actually displaying the data.
 
 Day 5:
