@@ -22,38 +22,42 @@
                 <p class="txtCenter PaddingT" style="font-size: 24px; font-weight: bold;">Friday, 11:00AM</p>
             </div>
             <div class="row">
-                <p class="txtCenter temp" style="font-size: 90px; color: white;">55°</p>
+                <p class="txtCenter temp" style="font-size: 90px; color: white;">55°F</p>
             </div>
             <div class="row">
-                <p class="txtCenter" style="font-size: 40px; font-family: 'Itim', cursive;">Stockton California</p>
+                <p class="txtCenter city" style="font-size: 40px; font-family: 'Itim', cursive;">Stockton California</p>
+                <p class="lat">latitude</p>
+                <p class="temp_min1">temp low:</p>
             </div>
         </div>
 
         <div class="row">
             <div class="col">
                 <div class="row">
-                    <p>High and Low:</p>
+                    <p class="temp_max" style="font-weight: bold;">High Temp:</p>
                 </div>
                 <div class="row">
-                    <p>62°/ 42°</p>
+                    <p class="temp_min" style="font-weight: bold;">Low Temp:</p>
                 </div>
             </div>
             <div class="col">
-                <p>Feels like 55°</p>
+                <p class="feels_like" style="font-weight: bold;">Feels like 55°</p>
             </div>
             <div class="col">
-                <p>UV Index: Low</p>
+                <p  style="font-weight: bold;">UV Index: Doesn't Work</p>
             </div>
             <div class="col">
-                <p>Wind: 2 mph</p>
+                <p class="wind" style="font-weight: bold;">Wind: 2 mph</p>
             </div>
             <div class="col">
-                <p>Sunrise: 7:02 AM</p>
+                <p class="sunrise" style="font-weight: bold;">Sunrise: 7:02 AM</p>
             </div>
             <div class="col">
-                <p>Sunset: 4:45 PM</p>
+                <p class="sunset" style="font-weight: bold;">Sunset: 4:45 PM</p>
             </div>
-            <div class="col"><p class="humidity">Humidity: 62%</p></div>
+            <div class="col">
+                <p class="humidity" style="font-weight: bold;">Humidity: 62%</p>
+            </div>
         </div>
 
         <div class="row">
@@ -110,7 +114,9 @@
 
         <div class="row">
             <div class="col webFooter">
-                <input type="text" placeholder="Location...">
+                <div class="search">
+                    <input type="text" class="search-bar" placeholder="Location...">
+                </div>
             </div>
         </div>
 
