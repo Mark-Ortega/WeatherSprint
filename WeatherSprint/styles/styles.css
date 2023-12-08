@@ -15,13 +15,16 @@
 /* Hero Image */
 .imgFit {
     object-fit: cover;
+    
 }
 
 #heroImg {
     background-image: url(../Images/Blue\ cloudy\ sky.jpg);
-    object-fit: contain;
+    object-fit: cover;
+    background-position: 10% 100%;
     height: 400px;
     background-repeat: no-repeat;
+    background-size: 100% 120%;
 }
 /* Text */
 .txtCenter {
@@ -34,12 +37,14 @@
 /* Buttons */
 .saveBtn {
     border: 2px solid black;
-    width: 25%;
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+    background-color: #ffff;
+    width: 35%;
     height: 10%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 13.25%;
     border-radius: 10px;
-    margin-left: 40%;
+    margin-left: 33%;
     
 }
 
@@ -51,10 +56,15 @@
 }
 
 .scrollBar{
-    height: 22%;
+    height: 130%;
     background-color: #d9d9d9;
+    
 }
 
+#fvList-width{
+    width: 90%;
+    padding-top: 2%;
+}
 .favoritesList{
     font-size: 40px;
     text-align: center;
@@ -65,4 +75,25 @@
 .tableMargin {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.search-bar{
+    width: 30%;
+    margin-left: 1%;
+}
+
+.trBorder{
+    padding: 25px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.trBorder-left{
+    border-left: 2px solid black;
+}
+.trBorder-right {
+    border-right: 2px solid black;
+}
+
+.fontBold{
+    font-weight: bold;
 }

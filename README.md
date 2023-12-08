@@ -10,4 +10,7 @@ Day Three: Did not make as much progress as i would've liked, i messed with the 
 
 Day Four: I definitely got stuck on trying to display my data and now have to play a major catchup game. Im struggling with actually displaying it and have tried multiple methods but i guess thats what ill be working on most of tonight. I still need to get the search bar working which should be pretty simple, and 5 day forecast but i might start that tonight and try to finish by tomorrow, really the main part im struggling with is actually displaying the data.
 
-Day 5:
+Day 5: pulled Api's for geolocation finally getting it to work with my code, managed to finish a functional search bar that searched by town and has on on Enter key press, Pulled api's for when you search a town. I watched some youtube videos last night, i tried watching the lms videos but for some reason could't really understand it enough to implement it (no disrespect to kens lectures) so i watched a detailed youtube video(can't remember the name) where a guy went in detail and psuedo coded what everything was doing and boosted my progress a ton, which i wish i learned earlier i may have finished the project. I also couldn't find the UV index data in any api so that was a problem. I couldn't get time working with longitude and latitude of the city either. Once again i spent way to much time trying to figure out how to fetch and call somewhat correctly and didn't have much time to figure out the other data. I didn't even attempt the favorites list and could not get the 5 day forecast to work. Will be working on my own weather app from scratch to practice every concept in this assignment.
+
+Peer Reveiwer-
+Peer Review Info-

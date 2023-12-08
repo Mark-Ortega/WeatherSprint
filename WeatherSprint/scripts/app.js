@@ -1,5 +1,49 @@
 // alert();
 
+let apiKey = "9aee2f00e3758bf4630fb055cc21dd22";
+
+navigator.geolocation.getCurrentPosition(success, errorFunction);
+
+
+
+async function success(position){
+
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+
+    const promise = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`);
+    const data = await promise.json();
+    console.log(data);
+// Pulling Api
+        const { name } = data;
+        const { temp, humidity, feels_like, temp_min, temp_max } = data.main;
+        const { speed } = data.wind;
+        const { sunrise, sunset, country } = data.sys;
+        console.log(name,temp,humidity,speed,sunrise,sunset)
+
+
+
+
+// Displaying Api on page
+document.querySelector(".city").innerText = name + ", " + country;
+document.querySelector(".temp").innerText = temp + "°F";
+document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
+document.querySelector(".wind").innerText = "Wind Speed: " + speed + "mp/h";
+document.querySelector(".sunrise").innerText = "Sunrise: " + sunrise;
+document.querySelector(".sunset").innerText = "Sunset: " + sunset;
+document.querySelector(".feels_like").innerText = "Feels Like: " + feels_like + "°F"; 
+document.querySelector(".temp_min_max").innerText = temp_max + "°F / " + temp_min + "°F"; 
+}
+
+
+function errorFunction(error){
+    console.log(error.message);
+
+    
+}
+
+
+
 let weather = {
     apiKey : "9aee2f00e3758bf4630fb055cc21dd22",
     fetchWeather: function (city) {
@@ -29,8 +73,7 @@ let weather = {
         document.querySelector(".sunrise").innerText = "Sunrise: " + sunrise;
         document.querySelector(".sunset").innerText = "Sunset: " + sunset;
         document.querySelector(".feels_like").innerText = "Feels Like: " + feels_like + "°F"; 
-        document.querySelector(".temp_min").innerText = "Low Temp: " + temp_min + "°F"; 
-        document.querySelector(".temp_max").innerText = "High Temp: " + temp_max + "°F"; 
+        document.querySelector(".temp_min_max").innerText = temp_max + "°F / " + temp_min + "°F"; 
        
 
 
@@ -86,7 +129,34 @@ document.querySelector(".search").addEventListener('keypress', function(e){
     }
 });
 
-weather.fetchWeather("Stockton");
+
+// // Geolocation
+// let apiKey = "9aee2f00e3758bf4630fb055cc21dd22";
+
+// navigator.geolocation.getCurrentPosition(success, errorFunction);
+
+// function success(position){
+//     console.log ("Our latitude: " + position.coords.latitude);
+//     console.log ("Our longitude: " + position.coords.longitude);
+// }
+
+// function errorFunction(error){
+//     console.log(error.message);
+// }
+// // Geolocation End
+
+// // Async Function
+
+
+// async function callWeather(position){
+//     const promise = await fetch(`api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}}&lon=${position.coords.longitude}&appid=${apiKey}&units=imperial`);
+//     const data = await promise.json();
+//     console.log(data);
+// }
+
+// callWeather(position);
+// // Async Function
+// weather.fetchWeather("stockton");
 
 
 
@@ -135,6 +205,7 @@ weather.fetchWeather("Stockton");
 // }
 // function errorFunction(error){
 //     console.log(error.message);
+// }
 
 
 // }
